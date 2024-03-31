@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+<meta charset="utf-8"/>
+
+<title>事例地</title>
+
+
+<link rel="stylesheet" href="./src/index.css">
+<link rel="stylesheet" href="./src/leaflet1.8.0/leaflet.css">
+<script charset="utf-8" src="./src/leaflet1.8.0/leaflet.js"></script>
+
+<!-- plugin -->
+<script src="./src/leaflet-fusesearch/fuse.min.js"></script>
+<link rel="stylesheet" href="./src/leaflet-fusesearch/leaflet.fusesearch.css">
+<script src="./src/leaflet-fusesearch/leaflet.fusesearch.js"></script>
+<link rel="stylesheet" href="./src/leaflet-minimap/Control.MiniMap.min.css">
+<script type="text/javascript" src="./src/leaflet-minimap/Control.MiniMap.min.js"></script>
+
+<style>
+#map { width: 100%;
+       height: 86vh;
+     }
+</style>
+
+<script src="./data/HYOU_POI.js"></script>
+
+</head>
+<body>
+<div>
+    <div>事例地</div>
+
+    <div class="markerslink">
+        <p>
+        <a href="#map" onclick="popupOn(0);">【東広島市役所】</a>
+        <a href="#map" onclick="popupOn(1);">【八本松出張所】</a>
+        <a href="#map" onclick="popupOn(2);">【高屋出張所】</a>
+        <a href="#map" onclick="popupOn(3);">【志和出張所】</a>
+        <a href="#map" onclick="popupOn(4);">【黒瀬支所】</a>
+        <a href="#map" onclick="popupOn(5);">【福富支所】</a>
+        <a href="#map" onclick="popupOn(6);">【豊栄支所】</a>
+        <a href="#map" onclick="popupOn(7);">【河内支所】</a>
+        <a href="#map" onclick="popupOn(8);">【安芸津支所】</a>
+        </p>
+    </div>
+
+    <input type="button" class="print" value="地図を印刷" onClick="javascript:window.print()">
+
+    <div id="map"></div>
+
+</div>
+
+</body>
+
+<script type='text/javascript' src="./src/index.js"></script>
+
+</html>
